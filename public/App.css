@@ -1,0 +1,175 @@
+
+/* defaults */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: 	 #EDE9FE;
+  padding: 0 16px;
+}
+
+/* styling header */
+
+header {
+  
+background: linear-gradient(90deg, #C084FC, #A78BFA); 
+  color: white;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #1E293B;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.navItems{
+ color: #1E293B;
+ font-family: "McLaren", cursive;
+  transform: translateY(3px);
+  border-bottom:2px solid wheat;
+}
+
+.navItems:hover,.navItems:focus{
+
+  cursor: pointer;
+  transform: translateX(-3px);
+  text-shadow: 2px 1px 2px rgba(56, 69, 95, 0.737);
+  transition: all 0.5s ease 0.1s;
+}
+
+
+/* styling footer */
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #6f4545;
+}
+
+
+/* styling notes */
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 15px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note:hover{
+  transform: scale(1.2);
+ transition: all 0.5s linear 0.5ms;
+ box-shadow: 0 0 15px #865353;
+}
+.hide{
+  display: none;
+}
+
+.outerNote:hover .note:not(:hover){
+  filter: blur(4px);
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #22D3EE;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* styling creation of notes */
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #CBD5E1;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 12px rgb(138, 137, 137);
+  transition: all 0.5s ease 0.5ms;
+}
+
+form:hover, form:focus {
+  box-shadow: 0 0 12px 2px rgb(70, 70, 212)
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  color: 	#1E293B;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: 	#4F46E5;
+  
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  border: 2px solid gainsboro;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+form button:hover{
+  transform: rotateY(360deg);
+  transition: all 1s ease 0.5s;
+}
+
+
